@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MindWave</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">MindWave</div>
+      <nav class="main-nav">
+        <a href="index.html" class="active">Головна</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    
+    <section class="hero">
+      <div class="hero-section"> 
+        
+        <div class="hero-text">
+          <h1>MindWave – твій ритм фокусу та відновлення</h1>
+          <p>
+            MindWave допомагає поєднати роботу, відпочинок і сон в єдину систему. 
+            Обирай режими, отримуй підказки від асистента і будуй день так, 
+            щоб вистачало ресурсу і на задачі, і на себе.
+          </p>
+          <div class="hero-actions">
+            <button id="start-focus-btn" class="primary-btn">Почати з режиму фокусу</button>
+  
+            <a href="blog.html" class="ghost-btn" style="text-decoration: none; display: inline-flex; align-items: center; justify-content: center;">Перейти до блогу</a>
+          </div>
+        </div>
+
+        <div class="hero-panel">
+          <h2>Режими MindWave</h2>
+          <ul class="hero-modes" style="list-style: none; padding: 0; display: flex; flex-direction: column; gap: 12px;">
+            <li class="panel-item"> <h3>Фокус 45–60 хв</h3>
+              <p>Концентрація на одній задачі, м’який фон, чіткий старт і кінець блоку.</p>
+            </li>
+            <li class="panel-item">
+              <h3>Легка робота</h3>
+              <p>Рутина, повідомлення, листи – без відчуття хаосу та перевантаження.</p>
+            </li>
+            <li class="panel-item">
+              <h3>Вечірній релакс</h3>
+              <p>Переходи з роботи у режим відпочинку без різкого “обриву” дня.</p>
+            </li>
+            <li class="panel-item">
+              <h3>Підготовка до сну</h3>
+              <p>Короткий ритуал, щоб заснути без нескінченного скролінгу.</p>
+            </li>
+          </ul>
+        </div>
+
+      </div> </section>
+
+    <section class="section" style="margin-top: 60px;"> <h2>Як працює MindWave</h2>
+      <div class="grid-3">
+        <div class="card">
+          <h3>1. Обираєш режим</h3>
+          <p>Визначаєш, що тобі потрібно зараз: сфокусуватися, розгрібти дрібні задачі чи потроху “згасити” день перед сном.</p>
+        </div>
+        <div class="card">
+          <h3>2. Отримуєш підказки</h3>
+          <p>Асистент MindWave радить, як організувати простір, що робити з телефоном, як ставити межі часу та пауз.</p>
+        </div>
+        <div class="card">
+          <h3>3. Будуєш ритм</h3>
+          <p>Повторюючи прості ритуали, формуєш власний стабільний темп: робота – пауза – відновлення – сон.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" style="margin-top: 60px; margin-bottom: 80px;">
+      <h2>Кому корисний MindWave</h2>
+      <div class="grid-3">
+        <article class="profile-card">
+          <h3>Студенту</h3>
+          <p>Для підготовки до сесії, навчання після роботи та поєднання кількох предметів без хаосу і паніки.</p>
+          <ul>
+            <li>фокус-блоки під конкретний предмет;</li>
+            <li>м’які паузи, щоб не “згоріти”;</li>
+            <li>вечірній режим, щоб заснути після насиченого дня.</li>
+          </ul>
+        </article>
+        <article class="profile-card">
+          <h3>Фахівцю за комп’ютером</h3>
+          <p>Для роботи з задачами, листами та мітингами без постійного розриву уваги.</p>
+          <ul>
+            <li>розділення глибокої роботи та рутини;</li>
+            <li>рекомендації по паузах для очей та тіла;</li>
+            <li>вечірні ритуали, щоб “відпустити” робочі думки.</li>
+          </ul>
+        </article>
+        <article class="profile-card"> <h3>У період змін</h3>
+           <p>Для тих, хто виходить із періоду перевтоми, вигорання чи складних життєвих змін.</p>
+           <ul>
+             <li>дуже короткі фокус-сесії без тиску на результат;</li>
+             <li>режим “м’якого дня” з мінімально необхідними задачами;</li>
+             <li>підтримка у формуванні безпечних, не карикатурних ритуалів.</li>
+           </ul>
+        </article>
+      </div>
+    </section>
+
+    <button id="chatbot-toggle" class="chatbot-toggle">Асистент MindWave</button>
+    
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <span>MindWave чат-бот</span>
+        <button id="chatbot-close" class="chatbot-close">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages">
+        </div>
+      <form id="chatbot-form" class="chatbot-form">
+        <input id="chatbot-input" type="text" placeholder="Напиши, що хочеш налаштувати зараз…" autocomplete="off">
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+
+  </main>
+
+  <script src="script.js"></script> 
+  <script src="chatbot.js"></script>
+  
+</body>
+</html>

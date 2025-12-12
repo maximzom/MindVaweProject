@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Контакти MindWave</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">MindWave</div>
+      <nav class="main-nav">
+        <a href="index.html">Головна</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html">Блог</a>
+        <a href="contacts.html" class="active">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    
+    <section class="section">
+      <h1>Контакти MindWave</h1>
+      <p style="max-width: 800px; margin-top: 10px;">
+        Якщо маєш запитання, ідеї для нових режимів або хочеш поділитися досвідом використання MindWave — заповни форму нижче. Ми читаємо всі повідомлення та використовуємо їх для покращення сервісу.
+      </p>
+    </section>
+
+    <section class="section contact-grid">
+      
+      <div class="contact-info">
+        <h2>Коли варто писати</h2> <ul>
+          <li>якщо щось незрозуміло в роботі MindWave;</li>
+          <li>якщо хочеш запропонувати новий режим або ритуал;</li>
+          <li>якщо помітив/помітила неточності в матеріалах блогу;</li>
+          <li>якщо є ідеї, як зробити асистента ще кориснішим.</li>
+        </ul>
+      </div>
+
+      <div class="contact-card">
+        <form class="contact-form">
+          <label>
+            Ім’я
+            <input type="text" name="name" placeholder="Введи своє ім’я">
+          </label>
+          
+          <label>
+            Електронна пошта
+            <input type="email" name="email" placeholder="email@example.com">
+          </label>
+          
+          <label>
+            Тема
+            <input type="text" name="subject" placeholder="Коротко про що повідомлення">
+          </label>
+          
+          <label>
+            Повідомлення
+            <textarea name="message" rows="5" placeholder="Опиши ситуацію, питання або ідею"></textarea>
+          </label>
+          
+          <button type="submit" class="primary-btn">Надіслати</button>
+        </form>
+      </div>
+
+    </section>
+
+    <button id="chatbot-toggle" class="chatbot-toggle">Асистент MindWave</button>
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <span>MindWave чат-бот</span>
+        <button id="chatbot-close" class="chatbot-close">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <form id="chatbot-form" class="chatbot-form">
+        <input id="chatbot-input" type="text" placeholder="Опиши, з чим потрібна допомога зараз…" autocomplete="off">
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+
+  </main>
+
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

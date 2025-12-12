@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Блог MindWave</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="logo">MindWave</div>
+      <nav class="main-nav">
+        <a href="index.html">Головна</a>
+        <a href="faq.html">FAQ</a>
+        <a href="blog.html" class="active">Блог</a>
+        <a href="contacts.html">Контакти</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container main-content">
+    
+    <section class="section" style="margin-bottom: 40px;">
+      <h1>Блог MindWave</h1>
+      <p style="max-width: 800px; margin-top: 12px;">
+        Ці матеріали допоможуть розібратися, як будувати день так, щоб вистачало
+        фокусу на задачі й ресурсу на відновлення. Кожен текст можна читати окремо.
+      </p>
+    </section>
+
+    <section class="section blog-list">
+      
+      <article class="blog-article card" style="margin-bottom: 32px;">
+        <h2>Як зменшити інформаційний шум протягом дня</h2>
+        <p>
+          Інформаційний шум рідко відчувається одразу, але до вечора проявляється
+          у вигляді розсіяної уваги, втоми й відчуття “я нічого не встигла”.
+        </p>
+        
+        <h3>Основні джерела шуму:</h3>
+        <ul>
+          <li>постійні сповіщення з месенджерів і соцмереж;</li>
+          <li>нескінченні вкладки браузера з “потрібною” інформацією;</li>
+          <li>спроба паралельно слухати подкаст і відповідати на листи;</li>
+          <li>перехід від задачі до задачі без закриття попередньої.</li>
+        </ul>
+
+        <h3>Що можна зробити вже сьогодні:</h3>
+        <ol>
+          <li>Вимкнути непотрібні сповіщення хоча б на робочий час.</li>
+          <li>Зменшити 1–2 часові “вікна” для перевірки повідомлень.</li>
+          <li>Закривати вкладки, які не пов’язані з поточним блоком роботи.</li>
+          <li>В кінці дня коротко виписувати завершені задачі замість бездумного скролінгу.</li>
+        </ol>
+      </article>
+
+      <article class="blog-article card" style="margin-bottom: 32px;">
+        <h2>Цикл “Фокус – пауза – відновлення”</h2>
+        <p>
+          Стійкий фокус неможливий без пауз. Але паузи часто перетворюються
+          на втечу в телефон, і тоді відновлення не відбувається.
+        </p>
+
+        <h3>Базова структура дня</h3>
+        <ul>
+          <li>3 фокус-блоки по 45–60 хвилин;</li>
+          <li>короткі перерви по 5–10 хвилин між блоками;</li>
+          <li>1–2 довші паузи по 20–30 хвилин без екранів;</li>
+          <li>щоденний перехід з робочого режиму в режим “я для себе”.</li>
+        </ul>
+
+        <h3>Приклади відновлюючих пауз</h3>
+        <ul>
+          <li>легка прогулянка або кілька хвилин біля вікна;</li>
+          <li>розтяжка, рухи плечима, шиєю, спиною;</li>
+          <li>вода, легкий перекус без “заїдань” емоцій;</li>
+          <li>2–3 хвилини з фокусом на диханні.</li>
+        </ul>
+      </article>
+
+      <article class="blog-article card" style="margin-bottom: 80px;">
+        <h2>Як не зірватися у вечірній скролінг?</h2>
+        <p>
+          Вечір часто стає компенсаторним часом, коли хочеться “дожити для себе”
+          і в результаті вкладаємося спати далеко за північ.
+        </p>
+
+        <h3>Чому так відбувається</h3>
+        <ul>
+          <li>протягом дня не було пауз “для себе”;</li>
+          <li>робочі думки не були “закриті” і тягнуться у вечір;</li>
+          <li>телефон асоціюється з єдиною доступною розрядкою.</li>
+        </ul>
+
+        <h3>Що може допомогти</h3>
+        <ol>
+          <li>Завершити день коротким підсумком: 3 зроблені речі, 1 крок на завтра.</li>
+          <li>Заздалегідь обрати один маленький вечірній ритуал без екранів.</li>
+          <li>Поставити собі “час останнього екрану” і дотримуватися його хоча б у будні.</li>
+          <li>Якщо дуже хочеться скролити — спробуйте робити це одним-двома короткими заходами, а не нескінченним потоком.</li>
+        </ol>
+      </article>
+
+    </section>
+
+    <button id="chatbot-toggle" class="chatbot-toggle">Асистент MindWave</button>
+    <div id="chatbot-window" class="chatbot-window">
+      <div class="chatbot-header">
+        <span>MindWave чат-бот</span>
+        <button id="chatbot-close" class="chatbot-close">&times;</button>
+      </div>
+      <div id="chatbot-messages" class="chatbot-messages"></div>
+      <form id="chatbot-form" class="chatbot-form">
+        <input id="chatbot-input" type="text" placeholder="Запитай про фокус, паузи чи вечірній ритуал." autocomplete="off">
+        <button type="submit">Надіслати</button>
+      </form>
+    </div>
+
+  </main>
+
+  <script src="chatbot.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
