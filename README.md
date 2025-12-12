@@ -204,10 +204,6 @@ const MW_GEMINI_API_KEY = "YOUR_API_KEY_HERE";
 
 Замініть `YOUR_API_KEY_HERE` на ваш реальний ключ:
 
-```javascript
-const MW_GEMINI_API_KEY = "AIzaSyBOTVVC5GiQfQdJj97t2Z5NbKIiyrfTItc";
-```
-
 > ⚠️ **ВАЖЛИВО**: Ніколи не публікуйте свій API ключ у публічних репозиторіях! Додайте `chatbot.js` до `.gitignore` або використовуйте змінні середовища.
 
 ### 3. Налаштування моделі (опціонально)
